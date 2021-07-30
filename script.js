@@ -17,7 +17,7 @@ const learn = async () => {
 
   await model.fit(valoresX, valoresY, { epochs: 1000 })
 
-  const resultado = model.predict(tf.tensor2d([20, 40], [3, 1]));
+  const resultado = model.predict(tf.tensor2d([20], [1, 1]));
 
   document.getElementById('resultado').innerHTML = resultado;
 
